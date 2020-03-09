@@ -1,3 +1,9 @@
+# instead of hard coding a return value, 
+# we wanted to run a custom sum function instead? 
+# Our custom function will mock out the undesired long running 
+# time.sleep call and only remain with the actual summing functionality we want to test.
+# We can simply define a side_effect in our test. 
+
 from unittest import TestCase
 from unittest.mock import patch
 
